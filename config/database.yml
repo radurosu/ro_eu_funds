@@ -5,13 +5,14 @@
 #   gem 'sqlite3'
 #
 default: &default
+  host: 127.0.0.1
   adapter: mysql2
   encoding: utf8
   database: fonduri
   pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  username: admin
+  password: T3st1ng!@#
+  #socket: /tmp/mysql.sock
 
 development:
   <<: *default
